@@ -1,13 +1,25 @@
-function countchar(text , char) {
+function countBs(text) {
     let count = 0
     for(let letter of text){
-        if (text[letter] === char){
+        if (letter === 'B'){
             count++
         }
     }
-    console.log(count)
+    return count
 }
 
 
-countchar('desmond', 'd') 
+function countChar(text, char) {
+    let count = 0
+    for(let letter of text){
+        if (letter === char){
+            count++
+        }
+    }
+    return count
+}
+
+
+console.log(countBs("BBC"));
+console.log(countChar("kakkerlak", "k"));
 

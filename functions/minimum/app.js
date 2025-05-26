@@ -1,12 +1,12 @@
 function min (valueOne, valueTwo) {
     if (valueOne < valueTwo) {
-        console.log(valueOne)
+        return valueOne
     }else{
-        console.log(valueTwo)
+        return valueTwo
     }
 }
 
-min(10,-12)
-min(1,2)
-min(222,92832)
-min(45,67)
+console.log(min(1, 2));
+console.log(min(222, 92832));
+console.log(min(45, 67));
+console.log(minmin(10,-12));

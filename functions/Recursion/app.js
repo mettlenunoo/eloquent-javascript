@@ -1,10 +1,7 @@
-function isEven (num) {
-while (num >= 2) {
-    num = num - 2
-    
+//recursive version
+function isEven(n) {
+  n = Math.abs(n);
+  if (n === 0) return true;
+  if (n === 1) return false;
+  return isEven(n - 2);
 }
-console.log(num)
-console.log(true? num === 0 : num <= 1)
-}
-
-isEven(-5)
